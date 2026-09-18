@@ -4,6 +4,7 @@
   console.log("Начинается выполнение скрипта");
   const ID_PREFIX = 'load_txt'; 
   const TEXT_ROOT = window.location.pathname.substring(0, window.location.pathname.lastIndexOf('/') + 1);
+  console.log("TEXT ROOT:", TEXT_ROOT)
 
   console.log("Добавлен слушатель");
   document.addEventListener('click', async function (e) {
@@ -27,7 +28,7 @@
       console.log("Получение текста книги");
       const res = await fetch(url, { cache: 'no-cache' });
       if (!res.ok) { 
-        //throw new Error('HTTP ' + res.status);
+        throw new Error('HTTP ' + res.status);
         const content = "Такая книга не найдена, или произошла другая ошибка внутри сайта"
       }
       else {
