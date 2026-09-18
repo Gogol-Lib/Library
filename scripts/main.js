@@ -27,8 +27,8 @@
     try {
       console.log("Получение текста книги");
       const res = await fetch(url, { cache: 'no-cache' });
+      console.log(res)
       if (!res.ok) { 
-        throw new Error('HTTP ' + res.status);
         const content = "Такая книга не найдена, или произошла другая ошибка внутри сайта"
       }
       else {
