@@ -121,13 +121,13 @@
           console.log("Инициация заголовка имени автора");
           if (h2Text) {
             const el2 = doc.createElement('h2');
-            el2.textContent = "<strong>"+h2Text+"</strong>";
+            el2.textContent = h2Text;
             container.appendChild(el2);
           }
           console.log("Инициация заголовка названия");
           if (h1Text) {
             const el1 = doc.createElement('h1');
-            el1.textContent = "<strong>"+h1Text+"</strong>";
+            el1.textContent = h1Text;
             container.appendChild(el1);
           }
           console.log("Инициация новых абзацев");

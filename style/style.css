@@ -64,6 +64,8 @@ content.writer {
 
 #book_text {
     width: 90%;
+    display: flex;
+    justify-content: center;
 }
 
 content.book {
