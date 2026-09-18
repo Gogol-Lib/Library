@@ -28,11 +28,13 @@
       console.log("Получение текста книги");
       const res = await fetch(url, { cache: 'no-cache' });
       console.log(res)
-      if (!res.ok) { 
+      if (res.ok == false) { 
         const content = "Такая книга не найдена, или произошла другая ошибка внутри сайта"
       }
       else {
         const content = await res.text();
+        console.log("res.ok")
+        console.log(content)
       }
 
       const lines = content.replace(/\r/g, '<>').split('\n');
