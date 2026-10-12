@@ -66,11 +66,8 @@ content.writer {
     width: 90%;
     display: flex;
     justify-content: center;
-}
-
-content.book {
+    flex-direction: column;
     font-family: "Theano Didot";
-    width: 90%;
 }
 
 .text_block {
