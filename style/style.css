@@ -94,7 +94,7 @@ header {
 .header__bottom {
     border-bottom: solid 0.05rem #b9b9b9;
     justify-content: center;
-    height: 3.20rem;
+    height: 2rem;
     width: 100%;
     font-weight: 500;
     align-items: center;
@@ -207,9 +207,6 @@ header {
         display: flex;
         justify-content: center;
     }
-    .header__top_right {
-        right: 5rem;
-    }
     .header__bottom {
         display: flex;
         margin-bottom: 2.5rem;
@@ -244,7 +241,7 @@ header {
 .authorisation {
     width: 30%;
     margin: auto;
-    padding: auto;
+    padding: 5%;
     border-radius: 1.25rem;
     text-align: center;
     background-color: #ffcf87;
@@ -252,14 +249,13 @@ header {
 
 .auth button {
     width: 85%;
-    height: 15%;
     border-radius: 1.25rem;
     font-size: 1rem;
     background-color: #d1672a;
     color: #f9f9f9;
     border: 0;
     margin-top: 20px;
-    line-height: 1px;
+    margin-left: 10%;
     text-align: center;
     font-weight: bold;
     cursor: pointer;
@@ -269,6 +265,7 @@ header {
 .auth input {
     width: 80%;
     font-size: 15px;
+    margin-left: 10%;
     margin-bottom: 10px;
     border-radius: 1.25rem;
     border: solid 2px #ebebeb;
