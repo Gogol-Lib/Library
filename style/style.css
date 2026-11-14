@@ -238,3 +238,84 @@ header {
         top: 0; 
     }
 }
+
+/* Авторизация */
+
+.authorisation {
+    width: 30%;
+    padding: 50px 30px 44px;
+    border-radius: 1.25rem;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+h1 {
+    margin: 12px;
+    font-weight: 600;
+    font-size: 36px;
+}
+
+input#auth,
+button#auth {
+    height: 50px;
+    margin: 0 auto;
+}
+
+.auth button {
+    width: 85%;
+    border-radius: 1.25rem;
+    font-size: 1rem;
+    background-color: #5b1098;
+    color: #f9f9f9;
+    border: 0;
+    padding: 0 16px;
+    margin-top: 20px;
+    line-height: 2px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    letter-spacing: 2px;
+}
+
+.auth input {
+    width: 80%;
+    font-size: 15px;
+    padding: 0 10px;
+    margin-bottom: 10px;
+    border-radius: 1.25rem;
+    border: solid 2px #ebebeb;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.auth a {
+    color: #5b1098;
+    font-size: 0.9rem;
+    text-align: left;
+    text-decoration: none;
+    margin-left: 10%;
+    margin-top: 10px;
+}
+
+.auth a:hover {
+    color: #000000;
+    transition: all 0.375s;
+}
+
+.auth input:hover {
+    border: solid 2px #10449A;
+    transition: all 0.375s;
+}
+
+.auth button:hover {
+    background-color: #981086;
+    transition: all 0.375s
+}
+
+@keyframes animation {
+    100% {
+        background-position: 15% 50%;
+    }
