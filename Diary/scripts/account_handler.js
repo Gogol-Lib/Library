@@ -5,21 +5,33 @@ async function sha256Hex(message) {
 }
 
 
-async function sign_in(hash_login, hash_password) {
+function sign_in(login, password) {
 
 }
 
 
-async function sign_up(hash_login, hash_password) {
+function sign_up(login, password) {
   console.log("Sign Up");
-  console.log(hash_login);
-  console.log(hash_password);
 }
 
 const input_login = document.getElementById("login");
 const input_password = document.getElementById("password");
 const SignIn_button = document.getElementById("signin");
 const SignUp_button = document.getElementById("signup");
+const ProblemP = document.getElementById("problem");
 
-SignIn_button.addEventListener('click', sign_in(sha256Hex(input_login.value), sha256Hex(input_password.value)))
-SignUp_button.addEventListener('click', sign_up(sha256Hex(input_login.value), sha256Hex(input_password.value)))
+SignIn_button.addEventListener('click', function() {
+  login = input_login.value;
+  password = input_password.value;
+
+  login_hash = sha256Hex(login);
+  password_hash =sha256Hex(password);
+
+  let database;
+  fetch("database.json").then((response) => response.json()).then((json) => database);
+  console.log(database);
+
+
+});
+
+//SignUp_button.addEventListener('click', sign_up(input_login.value, input_password.value));
