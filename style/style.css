@@ -244,7 +244,7 @@ header {
 .authorisation {
     width: 30%;
     margin: auto;
-    padding: 50px 30px 44px;
+    padding: auto;
     border-radius: 1.25rem;
     text-align: center;
     background-color: #ffcf87;
@@ -252,14 +252,14 @@ header {
 
 .auth button {
     width: 85%;
+    height: 15%;
     border-radius: 1.25rem;
     font-size: 1rem;
     background-color: #d1672a;
     color: #f9f9f9;
     border: 0;
-    padding: 0 16px;
     margin-top: 20px;
-    line-height: 10px;
+    line-height: 1px;
     text-align: center;
     font-weight: bold;
     cursor: pointer;
@@ -269,7 +269,6 @@ header {
 .auth input {
     width: 80%;
     font-size: 15px;
-    padding: 0 10px;
     margin-bottom: 10px;
     border-radius: 1.25rem;
     border: solid 2px #ebebeb;
@@ -278,20 +277,6 @@ header {
 form {
     display: flex;
     flex-direction: column;
-}
-
-.auth a {
-    color: #d1672a;
-    font-size: 0.9rem;
-    text-align: left;
-    text-decoration: none;
-    margin-left: 10%;
-    margin-top: 10px;
-}
-
-.auth a:hover {
-    color: #000000;
-    transition: all 0.375s;
 }
 
 .auth input:hover {
@@ -303,8 +288,3 @@ form {
     background-color: #e3661e;
     transition: all 0.375s
 }
-
-@keyframes animation {
-    100% {
-        background-position: 15% 50%;
-    }
