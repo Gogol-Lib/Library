@@ -259,7 +259,7 @@ header {
     border: 0;
     padding: 0 16px;
     margin-top: 20px;
-    line-height: 2px;
+    line-height: 10px;
     text-align: center;
     font-weight: bold;
     cursor: pointer;
