@@ -250,17 +250,6 @@ header {
     background-color: #ffcf87;
 }
 
-h1 {
-    margin: 12px;
-    font-weight: 600;
-    font-size: 36px;
-}
-
-input,button {
-    height: 50px;
-    margin: 0 auto;
-}
-
 .auth button {
     width: 85%;
     border-radius: 1.25rem;
