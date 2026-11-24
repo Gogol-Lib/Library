@@ -28,4 +28,6 @@ SignIn_button.addEventListener('click', function() {
   console.log(response);
 });
 
-//SignUp_button.addEventListener('click', sign_up(input_login.value, input_password.value));
+SignUp_button.addEventListener('click', function() {
+  console.log("SignUp");
+});
