@@ -194,7 +194,7 @@ header {
 @media screen and (width >= 600px) {
     .header {
         position: sticky;
-        top: -8vh;
+        top: -16vh;
     }
     .header__mobile {
         display: none;
