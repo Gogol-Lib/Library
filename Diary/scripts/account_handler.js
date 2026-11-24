@@ -11,7 +11,7 @@ const SignIn_button = document.getElementById("signin");
 const SignUp_button = document.getElementById("signup");
 const ProblemP = document.getElementById("problem");
 
-SignIn_button.addEventListener('click', function {
+SignIn_button.addEventListener('click', function() {
   login = input_login.value;
   password = input_password.value;
 
