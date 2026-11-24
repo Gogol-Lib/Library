@@ -46,6 +46,11 @@ h2 {
     margin-bottom: 1vh;
 }
 
+h2.list {
+    margin-top: 3vh;
+    margin-bottom: 0.75vh;
+}
+
 p {
     margin-bottom: 0.5vh;
 }
