@@ -24,8 +24,8 @@ SignIn_button.addEventListener('click', function() {
 
   let database;
   console.log("\nПолучение датабазы");
-  fetch("database.json").then((response) => response.json()).then((json) => database);
-  console.log(database);
+  fetch("database.json").then((response) => response.json())
+  console.log(response);
 });
 
 //SignUp_button.addEventListener('click', sign_up(input_login.value, input_password.value));
