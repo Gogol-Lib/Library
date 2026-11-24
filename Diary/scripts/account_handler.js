@@ -12,13 +12,18 @@ const SignUp_button = document.getElementById("signup");
 const ProblemP = document.getElementById("problem");
 
 SignIn_button.addEventListener('click', function() {
+  console.log("LOGIN");
+  
   login = input_login.value;
   password = input_password.value;
+  console.log("Получены вводы");
 
   login_hash = sha256Hex(login);
-  password_hash =sha256Hex(password);
+  password_hash = sha256Hex(password);
+  console.log("Вводы переведены в хэш");
 
   let database;
+  console.log("\nПолучение датабазы");
   fetch("database.json").then((response) => response.json()).then((json) => database);
   console.log(database);
 });

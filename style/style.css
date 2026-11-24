@@ -48,11 +48,28 @@ h2 {
 
 h2.list {
     margin-top: 3vh;
-    margin-bottom: 0.75vh;
+    margin-bottom: 0.35vh;
+}
+
+a {
+    color: #004080;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #004080;
+}
+
+a.current {
+    color: #6fa4ff;
 }
 
 p {
     margin-bottom: 0.5vh;
+}
+
+p.list {
+    margin-bottom: 0.1vh;
 }
 
 content {
@@ -93,11 +110,14 @@ header {
     padding-top: 1.44rem;
     padding-bottom: 1.61rem;
     align-items: center;
-    border: solid 0.05rem #b9b9b9;
+    width: 100%;
+    border-top: solid 0.05rem #b9b9b9;
+    border-left: solid 0.05rem #b9b9b9;
+    border-right: solid 0.05rem #b9b9b9;
 }
 
 .header__bottom {
-    border-bottom: solid 0.05rem #b9b9b9;
+    border: solid 0.05rem #b9b9b9;
     justify-content: center;
     height: 2rem;
     width: 100%;
@@ -115,6 +135,11 @@ header {
     align-items: center;
 }
 
+.photo {
+    margin-top: 1vh;
+}
+
+
 @media screen and (320px <= width < 600px) {
     .header {
         position: relative;
@@ -127,12 +152,11 @@ header {
     }
     .header__bottom_mobile {
         font-weight: 500;
-        margin-top: 1rem;
         box-sizing: border-box;
         padding: 0 1.7rem;
     }
     .header__select {
-        padding: 0.89rem 0;
+        padding: 0.49rem 0;
         border-bottom: solid 0.05rem #b9b9b9;
         max-height: max-content;
     }
@@ -141,12 +165,11 @@ header {
         padding-left: 1rem;
         padding-right: 1rem;
     }
-    .header__link {
-        margin-top: 0.89rem;
-    }
     .header__mobile {
         padding: 1.61rem 0 0 0;
-        height: 62vh;
+        position: sticky;
+        padding-bottom: 4vh;
+        height: content;
         width: 100%;
         border: solid 0.05rem #b9b9b9;
         box-sizing: border-box;
@@ -158,48 +181,20 @@ header {
         display: flex;
         justify-content: center;
         align-items: center;
+        height: 8vh;
         padding: 0 0 1.6rem 1.67rem;
-        border: solid 0.05rem #b9b9b9;
-        border-top: none;
-    }
-    .header__mobile-top .header__logo { 
-        width: 50%;
-    }
-    .header__burger {
-        width: 1.27rem;
-        position: relative;
-        cursor: pointer;
-        height: 0.87rem;
-        display: flex;
-        align-items: center;
     }
     .header__mobile {
         left: -17.8rem;
     }
-    .header__burger-menu, .header__burger-menu::after, .header__burger-menu::before {
-        width: 100%;
-        position: absolute;
-        height: 0.18rem;
-        background-color: black;
-        animation: 0.3s ease-in-out;
-        border-radius: 0.17rem;
-    }
-    .header__burger-menu::after {
-        content: none;
-        top: 0.341rem;
-    }
-    .header__burger-menu::before {
-        content: none;
-        bottom: 0.341rem;
-    }
 }
+
 
 
 @media screen and (width >= 600px) {
     .header {
         position: sticky;
-        top: 0;
-        animation: all 0.5s ease-in-out;
+        top: -8vh;
     }
     .header__mobile {
         display: none;
@@ -211,10 +206,10 @@ header {
         position: relative;
         display: flex;
         justify-content: center;
+        height: 8vh;
     }
     .header__bottom {
         display: flex;
-        margin-bottom: 2.5rem;
     }
     .header__link {
         margin-top: 0;
@@ -240,6 +235,9 @@ header {
         top: 0; 
     }
 }
+
+
+
 
 /* Авторизация */
 
